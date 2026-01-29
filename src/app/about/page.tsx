@@ -530,7 +530,7 @@ function TestimonialsSection() {
     <section className="py-20 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="Why Families Choose Built For Life"
+          title="Why Individuals Choose Built For Life"
           centered
         />
 

@@ -10,6 +10,7 @@ const footerLinks = {
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ],
   services: [
     { label: "Wealth Protection", href: "/services#wealth-protection" },
@@ -44,8 +45,8 @@ export function Footer() {
                 Schedule your FREE Financial Needs Analysis today.
               </p>
             </div>
-            <Button href="#schedule" size="lg" pulse>
-              Schedule My FREE Analysis
+            <Button href="/contact" size="lg" pulse>
+              Get My FREE Wealth Plan
             </Button>
           </div>
         </div>

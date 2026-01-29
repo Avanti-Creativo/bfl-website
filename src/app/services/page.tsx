@@ -36,7 +36,7 @@ function ServicesHero() {
           <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">
             We don&apos;t sell products. We build integrated wealth systems that protect what you&apos;ve earned, optimize what you&apos;re paying in taxes, and create lasting prosperity for generations.
           </p>
-          <Button href="#schedule" size="lg" pulse>
+          <Button href="/contact" size="lg" pulse>
             Schedule My FREE Wealth Strategy Plan
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
@@ -339,7 +339,7 @@ function ServiceDetail({
 
           {/* CTA */}
           <div className="text-center">
-            <Button href="#schedule" size="lg">
+            <Button href="/contact" size="lg">
               Schedule My FREE Wealth Strategy Plan
             </Button>
           </div>
@@ -566,7 +566,7 @@ function FinalCTA() {
           </p>
 
           <div className="mb-4">
-            <Button href="#schedule" size="lg" pulse>
+            <Button href="/contact" size="lg" pulse>
               Schedule My FREE Wealth Strategy Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

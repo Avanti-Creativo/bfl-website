@@ -38,7 +38,7 @@ function AboutHero() {
           <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
             Built For Life Financial exists to deliver the sophisticated wealth strategies, proactive tax optimization, and coordinated planning that high-net-worth individuals deserve but rarely receive from traditional advisors.
           </p>
-          <Button href="#schedule" size="lg" pulse>
+          <Button href="/contact" size="lg" pulse>
             Schedule My FREE Wealth Strategy Plan
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
@@ -105,7 +105,7 @@ function OurStorySection() {
           </motion.div>
 
           <div className="text-center mt-12">
-            <Button href="#schedule" size="lg">
+            <Button href="/contact" size="lg">
               Schedule My FREE Wealth Strategy Plan
             </Button>
           </div>
@@ -211,7 +211,7 @@ function MissionSection() {
           </motion.div>
 
           <div className="text-center mt-12">
-            <Button href="#schedule" size="lg">
+            <Button href="/contact" size="lg">
               Schedule My FREE Wealth Strategy Plan
             </Button>
           </div>
@@ -353,7 +353,7 @@ function ApproachSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -419,7 +419,7 @@ function ValuesSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -482,7 +482,7 @@ function ImpactSection() {
         </motion.div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -546,7 +546,7 @@ function TestimonialsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -599,7 +599,7 @@ function FinalCTA() {
           </p>
 
           <div className="mb-4">
-            <Button href="#schedule" size="lg" pulse>
+            <Button href="/contact" size="lg" pulse>
               Schedule My FREE Wealth Strategy Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Navigation() {
@@ -70,8 +71,8 @@ export function Navigation() {
                   />
                 </Link>
               ))}
-              <Button href="#schedule" size="sm">
-                Get Free Analysis
+              <Button href="/contact" size="sm">
+                Get Free Wealth Plan
               </Button>
             </nav>
 
@@ -139,8 +140,8 @@ export function Navigation() {
               </nav>
 
               <div className="mt-auto">
-                <Button href="#schedule" className="w-full" size="lg">
-                  Get Free Analysis
+                <Button href="/contact" className="w-full" size="lg">
+                  Get Free Wealth Plan
                 </Button>
               </div>
             </div>

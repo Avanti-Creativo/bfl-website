@@ -71,7 +71,7 @@ function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button href="#schedule" size="lg" pulse>
+              <Button href="/contact" size="lg" pulse>
                 Schedule My FREE Wealth Strategy Plan
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -268,7 +268,7 @@ function ProblemSection() {
         </motion.div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -334,7 +334,7 @@ function WealthyStrategiesSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -422,7 +422,7 @@ function CompanySection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -545,7 +545,7 @@ function WhoWeServeSection() {
         </motion.div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -604,7 +604,7 @@ function TestimonialsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="#schedule" size="lg">
+          <Button href="/contact" size="lg">
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -698,7 +698,7 @@ function ProcessSection() {
         </div>
 
         <div className="text-center">
-          <Button href="#schedule" size="lg" pulse>
+          <Button href="/contact" size="lg" pulse>
             Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
@@ -739,7 +739,7 @@ function FinalCTASection() {
           </p>
 
           <div className="mb-8">
-            <Button href="#schedule" size="lg" pulse>
+            <Button href="/contact" size="lg" pulse>
               Schedule My FREE Wealth Strategy Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

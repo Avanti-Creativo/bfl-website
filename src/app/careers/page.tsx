@@ -846,18 +846,33 @@ function AgentContactForm() {
     return Object.keys(newErrors).length === 0;
   };
 
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!validateForm()) return;
 
     setIsSubmitting(true);
+    setSubmitError(null);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("/api/careers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    setIsSubmitting(false);
-    setIsSuccess(true);
+      if (!response.ok) {
+        throw new Error("Failed to submit");
+      }
+
+      setIsSuccess(true);
+    } catch {
+      setSubmitError("Something went wrong. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -1262,6 +1277,20 @@ function AgentContactForm() {
                 )}
               </AnimatePresence>
             </div>
+
+            {/* Error Message */}
+            <AnimatePresence>
+              {submitError && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="bg-red-50 border border-red-200 rounded-xl p-4 text-red-600 text-sm text-center"
+                >
+                  {submitError}
+                </motion.div>
+              )}
+            </AnimatePresence>
 
             {/* Submit Button */}
             <motion.button

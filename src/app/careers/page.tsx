@@ -208,7 +208,7 @@ function PhilosophySection() {
     {
       icon: BookOpen,
       title: "Mastery Over Speed",
-      description: "We'd rather have advisors who deeply understand five strategies than those who superficially know fifty. Depth creates value; breadth creates confusion.",
+      description: "We'd rather have strategists who deeply understand five strategies than those who superficially know fifty. Depth creates value; breadth creates confusion.",
     },
   ];
 
@@ -227,7 +227,7 @@ function PhilosophySection() {
           className="max-w-3xl mx-auto text-center mb-12"
         >
           <p className="text-lg text-warm-gray leading-relaxed">
-            At Built For Life, we believe financial advising should be rooted in education,
+            At Built For Life, we believe wealth planning should be rooted in education,
             not sales tactics. Our methodology prioritizes long-term client relationships
             over short-term transactions.
           </p>
@@ -262,7 +262,7 @@ function DifferentiatorsSection() {
     {
       icon: GraduationCap,
       title: "Education-Based Methodology",
-      description: "Our advisors don't sell—they teach. When clients understand the 'why' behind strategies, they commit fully and refer enthusiastically.",
+      description: "Our strategists don't sell—they teach. When clients understand the 'why' behind strategies, they commit fully and refer enthusiastically.",
     },
     {
       icon: Target,
@@ -272,7 +272,7 @@ function DifferentiatorsSection() {
     {
       icon: Laptop,
       title: "Technology That Actually Enhances Your Practice",
-      description: "Modern CRM, financial planning software, client portals, and marketing support—without the corporate bureaucracy that makes technology feel like a burden.",
+      description: "Modern CRM, wealth planning software, client portals, and marketing support—without the corporate bureaucracy that makes technology feel like a burden.",
     },
     {
       icon: TrendingUp,
@@ -329,7 +329,7 @@ function CareerPathSection() {
     {
       icon: Award,
       title: "Associate Protection Guide",
-      description: "Entry point for experienced advisors. Focus on learning our education-based methodology and building your first client relationships within our framework.",
+      description: "Entry point for experienced strategists. Focus on learning our education-based methodology and building your first client relationships within our framework.",
     },
     {
       icon: Award,
@@ -339,7 +339,7 @@ function CareerPathSection() {
     {
       icon: Star,
       title: "Senior Protection Guide",
-      description: "Recognized expertise in multiple strategy areas. You're mentoring newer advisors and taking on more complex client situations.",
+      description: "Recognized expertise in multiple strategy areas. You're mentoring newer strategists and taking on more complex client situations.",
     },
     {
       icon: Star,
@@ -412,7 +412,7 @@ function FitCriteriaSection() {
     "You prefer transaction-based relationships over long-term planning.",
     "You're looking for a firm that will just 'stay out of your way.'",
     "You believe sales skills matter more than financial knowledge.",
-    "You're not interested in learning new approaches to financial planning.",
+    "You're not interested in learning new approaches to wealth planning.",
     "You want to coast on past success rather than continue growing.",
   ];
 
@@ -481,7 +481,7 @@ function FitCriteriaSection() {
 function CompensationSection() {
   const principles = [
     "Compensation that rewards long-term client relationships, not just initial sales",
-    "Equity opportunities for advisors who demonstrate mastery and commitment",
+    "Equity opportunities for strategists who demonstrate mastery and commitment",
     "No 'production minimums' that force you to push products clients don't need",
     "Bonus structures tied to client outcomes and retention, not just volume",
     "Full transparency about how compensation works—no hidden grids or surprise clawbacks",
@@ -513,7 +513,7 @@ function CompensationSection() {
             </div>
 
             <p className="text-warm-gray mb-6 leading-relaxed">
-              We don&apos;t publish specific compensation numbers here because every advisor&apos;s situation is different.
+              We don&apos;t publish specific compensation numbers here because every strategist&apos;s situation is different.
               What we can tell you is that our compensation philosophy is fundamentally different from traditional firms.
             </p>
 
@@ -564,7 +564,7 @@ function BringYourBookSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
           title="Bring Your Book. We'll Help You Transition."
-          subtitle="Leaving a firm with an established book of business feels daunting. We've helped many advisors make the move successfully."
+          subtitle="Leaving a firm with an established book of business feels daunting. We've helped many strategists make the move successfully."
           centered
         />
 
@@ -595,7 +595,7 @@ function BringYourBookSection() {
         >
           <p className="text-warm-gray leading-relaxed">
             We understand the complexity of transitioning client relationships. Our team has successfully guided
-            advisors through this process many times, and we&apos;ll work with you to create a transition plan
+            strategists through this process many times, and we&apos;ll work with you to create a transition plan
             that protects your relationships and maintains client trust.
           </p>
         </motion.div>
@@ -604,7 +604,7 @@ function BringYourBookSection() {
   );
 }
 
-// Ideal Advisor Section
+// Ideal Strategist Section
 function IdealAdvisorSection() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -613,7 +613,7 @@ function IdealAdvisorSection() {
       title: "Current Situation",
       icon: User,
       points: [
-        "Established financial advisor with a book of business",
+        "Established wealth strategist with a book of business",
         "Currently earning $200K+ annually",
         "Managing substantial client assets",
         "Feeling unfulfilled despite financial success",
@@ -645,7 +645,7 @@ function IdealAdvisorSection() {
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="The Ideal Built For Life Advisor"
+          title="The Ideal Built For Life Wealth Strategist"
           subtitle="Here's who thrives in our environment."
           centered
         />
@@ -710,19 +710,19 @@ function FAQSection() {
   const faqs = [
     {
       question: "What if my non-compete prevents me from bringing clients?",
-      answer: "We'll work with you to understand your specific agreement and develop a compliant transition strategy. Many advisors have successfully navigated non-competes, and our compliance team has experience helping with this process.",
+      answer: "We'll work with you to understand your specific agreement and develop a compliant transition strategy. Many strategists have successfully navigated non-competes, and our compliance team has experience helping with this process.",
     },
     {
       question: "Will I take an income hit during the transition?",
-      answer: "Transitions involve some short-term adjustment, but our compensation structure is designed to reward advisors who build long-term relationships. We'll discuss your specific situation and create a realistic transition plan that accounts for the adjustment period.",
+      answer: "Transitions involve some short-term adjustment, but our compensation structure is designed to reward strategists who build long-term relationships. We'll discuss your specific situation and create a realistic transition plan that accounts for the adjustment period.",
     },
     {
       question: "What if I've never operated as an independent contractor?",
-      answer: "Many of our advisors came from W-2 environments. We provide training on the operational and tax aspects of independent practice, and our support systems handle much of the administrative complexity so you can focus on clients.",
+      answer: "Many of our strategists came from W-2 environments. We provide training on the operational and tax aspects of independent practice, and our support systems handle much of the administrative complexity so you can focus on clients.",
     },
     {
       question: "Do I need to be in the DMV area?",
-      answer: "While our headquarters is in Annapolis, MD, we work with advisors across the country. Our technology platform and support systems are designed to enable effective remote collaboration.",
+      answer: "While our headquarters is in Annapolis, MD, we work with strategists across the country. Our technology platform and support systems are designed to enable effective remote collaboration.",
     },
     {
       question: "What's the time commitment for training and development?",
@@ -738,7 +738,7 @@ function FAQSection() {
     <section className="py-20 lg:py-28 bg-light-gray">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="Questions Advisors Ask"
+          title="Questions Strategists Ask"
           centered
         />
 

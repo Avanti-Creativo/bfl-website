@@ -61,7 +61,7 @@ function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl text-white/90 mb-8"
             >
-              Get Your FREE Financial Needs Analysis and Discover Exactly Where You&apos;re Leaving Money on the Table
+              Get Your COMPLIMENTARY Financial Needs Analysis and Discover Exactly Where You&apos;re Leaving Money on the Table
               <span className="block text-primary-green font-semibold mt-2">(Valued at $5,000)</span>
             </motion.p>
 
@@ -72,7 +72,7 @@ function HeroSection() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button href="/contact" size="lg" pulse>
-                Schedule My FREE Wealth Strategy Plan
+                Schedule My COMPLIMENTARY Wealth Strategy Plan
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </motion.div>
@@ -205,7 +205,7 @@ function ProblemSection() {
     },
     {
       icon: DollarSign,
-      title: "Commission-Driven Advisors",
+      title: "Commission-Driven Strategists",
       description: "Push expensive products that pay them the most, not strategies that serve you best.",
     },
     {
@@ -216,7 +216,7 @@ function ProblemSection() {
     {
       icon: AlertTriangle,
       title: "Conventional Wisdom Trap",
-      description: "Advice parroted by financial gurus keeps you trapped in a cycle of deferred dreams.",
+      description: "Advice parroted by wealth gurus keeps you trapped in a cycle of deferred dreams.",
     },
   ];
 
@@ -269,7 +269,7 @@ function ProblemSection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -335,7 +335,7 @@ function WealthyStrategiesSection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -384,7 +384,7 @@ function CompanySection() {
           className="p-8 mb-12 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg text-dark-navy leading-relaxed">
-            We&apos;re not a traditional wealth management firm. We don&apos;t operate in silos, focusing on investments while ignoring the strategies that actually move the needle: <span className="font-semibold text-primary-blue">tax optimization, estate planning, asset protection, and coordinated execution</span>. We&apos;re a comprehensive wealth strategy firm built specifically for successful executives, business owners, and professionals with substantial net worth. Our mission: Deliver the sophisticated, proactive, coordinated wealth strategies that individuals at your level need but rarely receive from traditional advisors.
+            We&apos;re not a traditional wealth management firm. We don&apos;t operate in silos, focusing on investments while ignoring the strategies that actually move the needle: <span className="font-semibold text-primary-blue">tax optimization, estate planning, asset protection, and coordinated execution</span>. We&apos;re a comprehensive wealth strategy firm built specifically for successful executives, business owners, and professionals with substantial net worth. Our mission: Deliver the sophisticated, proactive, coordinated wealth strategies that individuals at your level need but rarely receive from traditional strategists.
           </p>
         </motion.div>
 
@@ -423,7 +423,7 @@ function CompanySection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -443,7 +443,7 @@ function WhoWeServeSection() {
         "Corporate executives, physicians, attorneys, engineers, contractors",
         "High income but getting destroyed by taxes (35-50% effective rate)",
         "Money trapped in retirement accounts you can't access without penalties",
-        "Tried working with advisors before and was underwhelmed",
+        "Tried working with strategists before and was underwhelmed",
         "Want sophisticated tax strategies, not just investment management",
       ],
     },
@@ -546,7 +546,7 @@ function WhoWeServeSection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -605,7 +605,7 @@ function TestimonialsSection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -667,7 +667,7 @@ function ProcessSection() {
             60-minute comprehensive session
           </p>
           <p className="text-xl">
-            Valued at <span className="font-bold">$5,000</span> - Absolutely FREE
+            Valued at <span className="font-bold">$5,000</span> - Absolutely COMPLIMENTARY
           </p>
         </motion.div>
 
@@ -699,7 +699,7 @@ function ProcessSection() {
 
         <div className="text-center">
           <Button href="/contact" size="lg" pulse>
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -740,7 +740,7 @@ function FinalCTASection() {
 
           <div className="mb-8">
             <Button href="/contact" size="lg" pulse>
-              Schedule My FREE Wealth Strategy Plan
+              Schedule My COMPLIMENTARY Wealth Strategy Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
@@ -775,16 +775,16 @@ function FAQSection() {
       answer: "No. We work with individuals earning $50K+. If you're ready to build wealth, we're ready to help.",
     },
     {
-      question: "How is this different from other financial advisors?",
+      question: "How is this different from other wealth strategists?",
       answer: "We educate first, recommend second. No product-pushing. No AUM fees. No commissions driving our advice.",
     },
     {
       question: "What does this cost?",
-      answer: "The Financial Needs Analysis is 100% free. If you choose to work with us after that, we'll discuss pricing transparently based on your needs.",
+      answer: "The Financial Needs Analysis is 100% complimentary. If you choose to work with us after that, we'll discuss pricing transparently based on your needs.",
     },
     {
-      question: "I've been burned by financial advisors before. Why should I trust you?",
-      answer: "Read our reviews. Talk to our clients. Experience the difference yourself in the free session. We earn trust through results, not promises.",
+      question: "I've been burned by wealth strategists before. Why should I trust you?",
+      answer: "Read our reviews. Talk to our clients. Experience the difference yourself in the complimentary session. We earn trust through results, not promises.",
     },
   ];
 

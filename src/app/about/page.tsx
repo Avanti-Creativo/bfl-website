@@ -36,10 +36,10 @@ function AboutHero() {
             And Refuse to Watch It Bleed Away to Unnecessary Taxes, Poor Planning, and Mediocre Advice.
           </p>
           <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
-            Built For Life Financial exists to deliver the sophisticated wealth strategies, proactive tax optimization, and coordinated planning that high-net-worth individuals deserve but rarely receive from traditional advisors.
+            Built For Life Financial exists to deliver the sophisticated wealth strategies, proactive tax optimization, and coordinated planning that high-net-worth individuals deserve but rarely receive from traditional strategists.
           </p>
           <Button href="/contact" size="lg" pulse>
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </motion.div>
@@ -106,7 +106,7 @@ function OurStorySection() {
 
           <div className="text-center mt-12">
             <Button href="/contact" size="lg">
-              Schedule My FREE Wealth Strategy Plan
+              Schedule My COMPLIMENTARY Wealth Strategy Plan
             </Button>
           </div>
         </div>
@@ -212,7 +212,7 @@ function MissionSection() {
 
           <div className="text-center mt-12">
             <Button href="/contact" size="lg">
-              Schedule My FREE Wealth Strategy Plan
+              Schedule My COMPLIMENTARY Wealth Strategy Plan
             </Button>
           </div>
         </motion.div>
@@ -234,7 +234,7 @@ function VisionSection() {
           >
             <span className="text-sm font-medium text-primary-green uppercase tracking-wider">Our Vision</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-dark-navy mt-2 mb-6">
-              To Redefine What High-Net-Worth Individuals Should Expect From Their Advisors
+              To Redefine What High-Net-Worth Individuals Should Expect From Their Wealth Strategists
             </h2>
 
             <p className="text-lg text-warm-gray leading-relaxed mb-4">
@@ -244,13 +244,13 @@ function VisionSection() {
               Not through size or assets under management, but through results.
             </p>
             <p className="text-lg text-warm-gray leading-relaxed mb-4">
-              When a successful executive, business owner, or professional asks, &ldquo;What should I expect from my wealth advisor?&rdquo;, the answer should be: The level of sophistication, coordination, and proactive guidance that Built For Life delivers.
+              When a successful executive, business owner, or professional asks, &ldquo;What should I expect from my wealth strategist?&rdquo;, the answer should be: The level of sophistication, coordination, and proactive guidance that Built For Life delivers.
             </p>
             <p className="text-lg text-warm-gray leading-relaxed mb-4">
               We envision a future where high-net-worth individuals no longer tolerate fragmented advice, reactive planning, and generic strategies that ignore their complexity.
             </p>
             <p className="text-lg text-warm-gray leading-relaxed">
-              Where paying $10,000+ annually to financial professionals actually delivers measurable ROI through tax savings, estate tax elimination, and coordinated execution. Where advisors act as true partners who bring strategies to clients proactively, respect their intelligence and time, and deliver family-office-caliber service without requiring $25M+ minimums.
+              Where paying $10,000+ annually to financial professionals actually delivers measurable ROI through tax savings, estate tax elimination, and coordinated execution. Where strategists act as true partners who bring strategies to clients proactively, respect their intelligence and time, and deliver family-office-caliber service without requiring $25M+ minimums.
             </p>
 
             <p className="text-2xl font-logo font-bold text-primary-blue mt-8">
@@ -354,7 +354,7 @@ function ApproachSection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -375,7 +375,7 @@ function ValuesSection() {
     },
     {
       title: "Proactivity Over Reactivity",
-      description: "Most advisors wait for you to ask questions. We bring you strategies before you know you need them. Estate exemption sunsetting in 2026? We're reaching out in 2024 with a gifting plan.",
+      description: "Most strategists wait for you to ask questions. We bring you strategies before you know you need them. Estate exemption sunsetting in 2026? We're reaching out in 2024 with a gifting plan.",
     },
     {
       title: "Coordination Over Fragmentation",
@@ -420,7 +420,7 @@ function ValuesSection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -434,7 +434,7 @@ function ImpactSection() {
     { value: 2.6, prefix: "$", suffix: "M", label: "Tax Savings", decimals: 1 },
     { value: 8700, prefix: "$", suffix: "", label: "Avg First-Year Savings", decimals: 0 },
     { value: 98, prefix: "", suffix: "%", label: "Client Retention", decimals: 0 },
-    { value: 450, prefix: "", suffix: "+", label: "Hours Free Education", decimals: 0 },
+    { value: 450, prefix: "", suffix: "+", label: "Hours Complimentary Education", decimals: 0 },
     { value: 127, prefix: "", suffix: "", label: "Five-Star Reviews", decimals: 0 },
   ];
 
@@ -483,7 +483,7 @@ function ImpactSection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -547,7 +547,7 @@ function TestimonialsSection() {
 
         <div className="text-center mt-12">
           <Button href="/contact" size="lg">
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -600,7 +600,7 @@ function FinalCTA() {
 
           <div className="mb-4">
             <Button href="/contact" size="lg" pulse>
-              Schedule My FREE Wealth Strategy Plan
+              Schedule My COMPLIMENTARY Wealth Strategy Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>

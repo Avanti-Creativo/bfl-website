@@ -73,7 +73,7 @@ export function Navigation() {
                 </Link>
               ))}
               <Button href="/contact" size="sm">
-                Get Free Wealth Plan
+                Get Complimentary Wealth Plan
               </Button>
             </nav>
 
@@ -142,7 +142,7 @@ export function Navigation() {
 
               <div className="mt-auto">
                 <Button href="/contact" className="w-full" size="lg">
-                  Get Free Wealth Plan
+                  Get Complimentary Wealth Plan
                 </Button>
               </div>
             </div>

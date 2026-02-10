@@ -43,11 +43,11 @@ export function Footer() {
                 Ready to Build Your Financial Future?
               </h3>
               <p className="text-white/70">
-                Schedule your FREE Financial Needs Analysis today.
+                Schedule your COMPLIMENTARY Financial Needs Analysis today.
               </p>
             </div>
             <Button href="/contact" size="lg" pulse>
-              Get My FREE Wealth Plan
+              Get My COMPLIMENTARY Wealth Plan
             </Button>
           </div>
         </div>
@@ -120,20 +120,20 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+14434064778"
                   className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
                 >
                   <Phone size={16} className="flex-shrink-0" />
-                  <span>(123) 456-7890</span>
+                  <span>(443) 406-4778</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@builtforlife.com"
+                  href="mailto:info@bflagency.com"
                   className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
                 >
                   <Mail size={16} className="flex-shrink-0" />
-                  <span>info@builtforlife.com</span>
+                  <span>info@bflagency.com</span>
                 </a>
               </li>
             </ul>

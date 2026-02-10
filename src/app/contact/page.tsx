@@ -57,7 +57,7 @@ function ContactHero() {
             className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6"
           >
             <Sparkles className="w-4 h-4 text-primary-green" />
-            <span className="text-white/90 text-sm font-medium">Free Wealth Strategy Plan</span>
+            <span className="text-white/90 text-sm font-medium">Complimentary Wealth Strategy Plan</span>
           </motion.div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-logo font-bold text-white leading-tight mb-6">
@@ -69,7 +69,7 @@ function ContactHero() {
             Wealth Strategy Plan and discover exactly where you can optimize your finances.
           </p>
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
-            Valued at <span className="text-primary-green font-semibold">$5,000</span> — Absolutely FREE
+            Valued at <span className="text-primary-green font-semibold">$5,000</span> — Absolutely COMPLIMENTARY
           </p>
         </motion.div>
       </div>
@@ -191,7 +191,7 @@ function ContactForm() {
     >
       <div className="mb-8">
         <h2 className="text-2xl md:text-3xl font-logo font-bold text-dark-navy mb-2">
-          Get Your Free Wealth Plan
+          Get Your Complimentary Wealth Plan
         </h2>
         <p className="text-warm-gray">
           Fill out the form below and one of our wealth strategists will contact you shortly.
@@ -489,7 +489,7 @@ function ContactForm() {
             </>
           ) : (
             <>
-              <span>Get My Free Wealth Plan</span>
+              <span>Get My Complimentary Wealth Plan</span>
               <Send className="w-5 h-5" />
             </>
           )}
@@ -509,14 +509,14 @@ function ContactInfo() {
     {
       icon: Phone,
       label: "Phone",
-      value: "(123) 456-7890",
-      href: "tel:+1234567890",
+      value: "(443) 406-4778",
+      href: "tel:+14434064778",
     },
     {
       icon: Mail,
       label: "Email",
-      value: "info@builtforlife.com",
-      href: "mailto:info@builtforlife.com",
+      value: "info@bflagency.com",
+      href: "mailto:info@bflagency.com",
     },
     {
       icon: MapPin,
@@ -667,18 +667,18 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="tel:+1234567890"
+                href="tel:+14434064778"
                 className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>(123) 456-7890</span>
+                <span>(443) 406-4778</span>
               </a>
               <a
-                href="mailto:info@builtforlife.com"
+                href="mailto:info@bflagency.com"
                 className="inline-flex items-center gap-2 bg-primary-green hover:bg-primary-green-dark text-white px-6 py-3 rounded-xl transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>info@builtforlife.com</span>
+                <span>info@bflagency.com</span>
               </a>
             </div>
           </motion.div>

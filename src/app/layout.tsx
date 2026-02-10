@@ -5,9 +5,9 @@ import { Navigation } from "@/components/common/Navigation";
 import { Footer } from "@/components/common/Footer";
 
 export const metadata: Metadata = {
-  title: "Built For Life Financial Agency | Financial Strategies for Individuals",
-  description: "Get your FREE Financial Needs Analysis and discover exactly where you're leaving money on the table. Tax-optimized wealth-building strategies for hard-working individuals.",
-  keywords: "financial planning, tax optimization, wealth building, insurance planning, financial advisor",
+  title: "Built For Life Financial Agency | Wealth Strategies for Individuals",
+  description: "Get your COMPLIMENTARY Financial Needs Analysis and discover exactly where you're leaving money on the table. Tax-optimized wealth-building strategies for hard-working individuals.",
+  keywords: "wealth planning, tax optimization, wealth building, insurance planning, wealth strategist",
   openGraph: {
     title: "Built For Life Financial Agency",
     description: "Finally: A Clear Financial Strategy That Protects You, Optimizes Your Taxes, and Builds Lasting Wealth",

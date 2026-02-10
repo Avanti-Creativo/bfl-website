@@ -37,7 +37,7 @@ function ServicesHero() {
             We don&apos;t sell products. We build integrated wealth systems that protect what you&apos;ve earned, optimize what you&apos;re paying in taxes, and create lasting prosperity for generations.
           </p>
           <Button href="/contact" size="lg" pulse>
-            Schedule My FREE Wealth Strategy Plan
+            Schedule My COMPLIMENTARY Wealth Strategy Plan
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </motion.div>
@@ -340,7 +340,7 @@ function ServiceDetail({
           {/* CTA */}
           <div className="text-center">
             <Button href="/contact" size="lg">
-              Schedule My FREE Wealth Strategy Plan
+              Schedule My COMPLIMENTARY Wealth Strategy Plan
             </Button>
           </div>
         </motion.div>
@@ -452,7 +452,7 @@ const services: ServiceDetailProps[] = [
     icon: Briefcase,
     number: 4,
     title: "Business & Professional Planning",
-    problem: "You're a business owner, entrepreneur, or high-income professional. Your financial situation is more complex than a W-2 employee's. Most financial advisors don't understand your world. They give you generic advice designed for corporate employees.",
+    problem: "You're a business owner, entrepreneur, or high-income professional. Your financial situation is more complex than a W-2 employee's. Most wealth strategists don't understand your world. They give you generic advice designed for corporate employees.",
     approach: [
       "Strategies customized to your business structure and income type",
       "Coordination between personal and business financial plans",
@@ -534,7 +534,7 @@ const services: ServiceDetailProps[] = [
       "Clear understanding of financial concepts",
       "Confidence to make informed decisions",
       "Accountability partner who keeps you on track",
-      "Work with a trusted advisor who respects your intelligence",
+      "Work with a trusted strategist who respects your intelligence",
       "Empowered to make smart choices for your future",
     ],
   },
@@ -567,7 +567,7 @@ function FinalCTA() {
 
           <div className="mb-4">
             <Button href="/contact" size="lg" pulse>
-              Schedule My FREE Wealth Strategy Plan
+              Schedule My COMPLIMENTARY Wealth Strategy Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>

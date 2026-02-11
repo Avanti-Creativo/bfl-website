@@ -614,7 +614,7 @@ function IdealAdvisorSection() {
       icon: User,
       points: [
         "Established wealth strategist with a book of business",
-        "Currently earning $200K+ annually",
+        "Currently earning $500K+ annually",
         "Managing substantial client assets",
         "Feeling unfulfilled despite financial success",
       ],
@@ -818,7 +818,7 @@ function AgentContactForm() {
     { value: "health", label: "Health Insurance" },
     { value: "series6", label: "Series 6" },
     { value: "series7", label: "Series 7" },
-    { value: "series65", label: "Series 65/66" },
+    { value: "series65", label: "Series 65" },
   ];
 
   const validateForm = (): boolean => {

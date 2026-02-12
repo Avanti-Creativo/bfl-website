@@ -614,7 +614,7 @@ function IdealAdvisorSection() {
       icon: User,
       points: [
         "Established wealth strategist with a book of business",
-        "Currently earning $500K+ annually",
+        "Currently earning $250K+ annually",
         "Managing substantial client assets",
         "Feeling unfulfilled despite financial success",
       ],

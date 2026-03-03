@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   Sparkles, ArrowRight, AlertTriangle, GraduationCap, Heart, BookOpen,
   Target, Laptop, TrendingUp, Clock, Users, CheckCircle, XCircle,
@@ -791,6 +792,7 @@ function FinalCTASection() {
 
 // Agent Contact Form
 function AgentContactForm() {
+  const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -803,7 +805,6 @@ function AgentContactForm() {
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
 
   const experienceOptions = [
@@ -867,7 +868,7 @@ function AgentContactForm() {
         throw new Error("Failed to submit");
       }
 
-      setIsSuccess(true);
+      router.push("/thank-you?source=careers");
     } catch {
       setSubmitError("Something went wrong. Please try again or contact us directly.");
     } finally {
@@ -893,42 +894,6 @@ function AgentContactForm() {
         : [...prev.licenses, license],
     }));
   };
-
-  if (isSuccess) {
-    return (
-      <section id="contact-form" className="py-20 lg:py-28 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="bg-light-gray rounded-3xl p-8 md:p-12 text-center"
-          >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="w-20 h-20 rounded-full bg-primary-green/10 flex items-center justify-center mx-auto mb-6"
-            >
-              <CheckCircle className="w-10 h-10 text-primary-green" />
-            </motion.div>
-            <h3 className="text-2xl md:text-3xl font-logo font-bold text-dark-navy mb-4">
-              Thank You for Your Interest!
-            </h3>
-            <p className="text-warm-gray mb-6 max-w-md mx-auto">
-              We&apos;ve received your information and will be in touch within 48 hours to schedule
-              an initial conversation about your career goals.
-            </p>
-            <div className="flex items-center justify-center gap-4 text-sm text-warm-gray">
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-primary-blue" />
-                <span>Response within 48 hours</span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section id="contact-form" className="py-20 lg:py-28 bg-white">

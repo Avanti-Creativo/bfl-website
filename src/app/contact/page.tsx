@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   Send, CheckCircle, Phone, Mail, MapPin, Clock,
   ArrowRight, Shield, Users, Sparkles
@@ -79,6 +80,7 @@ function ContactHero() {
 
 // Contact Form Component
 function ContactForm() {
+  const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -89,7 +91,6 @@ function ContactForm() {
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
 
   const services = [
@@ -137,7 +138,7 @@ function ContactForm() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     setIsSubmitting(false);
-    setIsSuccess(true);
+    router.push("/thank-you?source=contact");
   };
 
   const handleChange = (
@@ -149,38 +150,6 @@ function ContactForm() {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
   };
-
-  if (isSuccess) {
-    return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="bg-white rounded-3xl p-8 md:p-12 shadow-xl text-center"
-      >
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-          className="w-20 h-20 rounded-full bg-primary-green/10 flex items-center justify-center mx-auto mb-6"
-        >
-          <CheckCircle className="w-10 h-10 text-primary-green" />
-        </motion.div>
-        <h3 className="text-2xl md:text-3xl font-logo font-bold text-dark-navy mb-4">
-          Thank You for Reaching Out!
-        </h3>
-        <p className="text-warm-gray mb-6 max-w-md mx-auto">
-          We&apos;ve received your message and will be in touch within 24 hours to schedule
-          your complimentary Wealth Strategy Plan.
-        </p>
-        <div className="flex items-center justify-center gap-4 text-sm text-warm-gray">
-          <div className="flex items-center gap-2">
-            <Clock className="w-4 h-4 text-primary-blue" />
-            <span>Response within 24 hours</span>
-          </div>
-        </div>
-      </motion.div>
-    );
-  }
 
   return (
     <motion.div

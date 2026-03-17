@@ -14,6 +14,7 @@ const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
   { href: "/careers", label: "Agents" },
+  { href: "/referral-hub", label: "Referral Hub" },
   { href: "/contact", label: "Contact" },
 ];
 

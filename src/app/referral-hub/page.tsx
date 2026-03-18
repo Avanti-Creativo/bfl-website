@@ -1,21 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SectionHeadline } from "@/components/ui/SectionHeadline";
-
-const partners = [
-  { name: "Financial Legacy Builders" },
-  { name: "360 Veteran" },
-  { name: "Prime Ethos" },
-  { name: "LegalShield" },
-  { name: "Wealth Guaranteed" },
-  { name: "Digital Accelerant" },
-  { name: "National Gold Consultants" },
-  { name: "Korman Elite Holdings" },
-  { name: "Visionary Flow Solutions" },
-];
+import { partners } from "./partners-data";
+import Link from "next/link";
 
 function getInitials(name: string) {
   return name
@@ -131,7 +121,7 @@ function PartnerCard({
   partner,
   index,
 }: {
-  partner: { name: string };
+  partner: { name: string; slug: string };
   index: number;
 }) {
   const gradient = gradients[index % gradients.length];
@@ -158,10 +148,13 @@ function PartnerCard({
       </h3>
 
       <div className="mt-auto pt-2">
-        <button className="inline-flex items-center gap-2 px-6 py-3 bg-primary-green text-white font-semibold rounded-lg hover:bg-primary-green-dark transition-colors duration-200 cursor-pointer">
+        <Link
+          href={`/referral-hub/${partner.slug}`}
+          className="inline-flex items-center gap-2 px-6 py-3 bg-primary-green text-white font-semibold rounded-lg hover:bg-primary-green-dark transition-colors duration-200"
+        >
           Learn More & Refer
-          <ExternalLink className="w-4 h-4" />
-        </button>
+          <ArrowRight className="w-4 h-4" />
+        </Link>
       </div>
     </motion.div>
   );
@@ -180,7 +173,7 @@ function PartnersSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {partners.map((partner, index) => (
-            <PartnerCard key={partner.name} partner={partner} index={index} />
+            <PartnerCard key={partner.slug} partner={partner} index={index} />
           ))}
         </div>
       </div>

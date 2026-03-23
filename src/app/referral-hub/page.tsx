@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { SectionHeadline } from "@/components/ui/SectionHeadline";
 import { partners } from "./partners-data";
 import Link from "next/link";
+import Image from "next/image";
 
 function getInitials(name: string) {
   return name
@@ -121,7 +122,7 @@ function PartnerCard({
   partner,
   index,
 }: {
-  partner: { name: string; slug: string };
+  partner: { name: string; slug: string; logo?: string };
   index: number;
 }) {
   const gradient = gradients[index % gradients.length];
@@ -134,14 +135,26 @@ function PartnerCard({
       transition={{ delay: index * 0.05 }}
       className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover flex flex-col items-center text-center"
     >
-      {/* Logo Placeholder */}
-      <div
-        className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center mb-5 shadow-lg`}
-      >
-        <span className="text-2xl font-logo font-bold text-white">
-          {getInitials(partner.name)}
-        </span>
-      </div>
+      {/* Partner Logo */}
+      {partner.logo ? (
+        <div className="w-20 h-20 rounded-2xl overflow-hidden mb-5 relative bg-white flex items-center justify-center">
+          <Image
+            src={partner.logo}
+            alt={`${partner.name} logo`}
+            width={80}
+            height={80}
+            className="object-contain"
+          />
+        </div>
+      ) : (
+        <div
+          className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center mb-5 shadow-lg`}
+        >
+          <span className="text-2xl font-logo font-bold text-white">
+            {getInitials(partner.name)}
+          </span>
+        </div>
+      )}
 
       <h3 className="text-xl font-logo font-bold text-dark-navy mb-4">
         {partner.name}

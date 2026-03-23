@@ -1,6 +1,7 @@
 export interface Partner {
   slug: string;
   name: string;
+  logo?: string;
   founder: string;
   founderTitle: string;
   whoTheyAre: string[];
@@ -24,6 +25,7 @@ export const partners: Partner[] = [
   {
     slug: "financial-legacy-builders",
     name: "Financial Legacy Builders",
+    logo: "/images/logos/FLB-13.png",
     founder: "Dr. Steven Crane",
     founderTitle: "Founder",
     whoTheyAre: [
@@ -58,6 +60,7 @@ export const partners: Partner[] = [
   {
     slug: "360-veteran",
     name: "360 Veteran",
+    logo: "/images/logos/Primary Logo.png",
     founder: "Dr. Steven Crane",
     founderTitle: "Founder",
     whoTheyAre: [
@@ -90,6 +93,7 @@ export const partners: Partner[] = [
   {
     slug: "prime-ethos",
     name: "Prime Ethos Coaching & Consulting",
+    logo: "/images/logos/LOGO2 trans 1.png",
     founder: "Jerry Harrison",
     founderTitle: "Founder & CEO",
     whoTheyAre: [
@@ -120,6 +124,7 @@ export const partners: Partner[] = [
   {
     slug: "legalshield",
     name: "LegalShield",
+    logo: "/images/logos/legalshield-logo-vector-2021.png",
     founder: "Tim Sloma",
     founderTitle: "Regional Vice President",
     whoTheyAre: [
@@ -162,6 +167,7 @@ export const partners: Partner[] = [
   {
     slug: "wealth-guaranteed",
     name: "Wealth Guaranteed",
+    logo: "/images/logos/67ec6ca0903b501b6f0a835a.jpeg",
     founder: "Kobe Abass",
     founderTitle: "Sales Manager",
     whoTheyAre: [
@@ -199,6 +205,7 @@ export const partners: Partner[] = [
   {
     slug: "digital-accelerant",
     name: "Digital Accelerant",
+    logo: "/images/logos/Digital Accelerant-final logo.png",
     founder: "Gabe O\u2019Neill",
     founderTitle: "Founder & CEO",
     whoTheyAre: [
@@ -231,6 +238,7 @@ export const partners: Partner[] = [
   {
     slug: "national-gold-consultants",
     name: "National Gold Consultants",
+    logo: "/images/logos/ngc-logo-2.jpg",
     founder: "Ryan Long",
     founderTitle: "President",
     whoTheyAre: [
@@ -263,6 +271,7 @@ export const partners: Partner[] = [
   {
     slug: "korman-elite-holdings",
     name: "Korman Elite Holdings",
+    logo: "/images/logos/KORMAN ELITE HOLDOINGS LOGO FINAL.jpg",
     founder: "Bill Korman",
     founderTitle: "Co-Founder",
     whoTheyAre: [
@@ -298,6 +307,7 @@ export const partners: Partner[] = [
   {
     slug: "visionary-flow-solutions",
     name: "Visionary Flow Solutions",
+    logo: "/images/logos/visionary-flow-solutions.png",
     founder: "Alexa Briggs",
     founderTitle: "Co-Founder",
     whoTheyAre: [

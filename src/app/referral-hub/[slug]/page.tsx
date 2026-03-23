@@ -10,7 +10,6 @@ import {
   Phone,
   Mail,
   Globe,
-  AlertTriangle,
   CheckCircle,
   Info,
 } from "lucide-react";
@@ -277,15 +276,12 @@ export default function PartnerDetailPage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-amber-50 border border-amber-200 rounded-2xl p-6"
+              className="text-center"
             >
-              <div className="flex items-center gap-2 mb-3">
-                <AlertTriangle className="w-5 h-5 text-amber-600" />
-                <h3 className="text-sm font-semibold text-amber-800 uppercase tracking-wider">
-                  Disclosure
-                </h3>
-              </div>
-              <p className="text-sm text-amber-900/80 leading-relaxed">
+              <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+                Disclosure
+              </h3>
+              <p className="text-sm text-gray-500 leading-relaxed">
                 {partner.disclosure}
               </p>
             </motion.div>
@@ -322,9 +318,9 @@ export default function PartnerDetailPage() {
                 size="lg"
                 pulse
               >
-                Contact {partner.contact.name.split(" ")[0]}
+                Contact {partner.contact.name}
               </Button>
-              <Button href="/referral-hub" size="lg" variant="outline">
+              <Button href="/referral-hub" size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-blue">
                 Browse All Partners
               </Button>
             </div>

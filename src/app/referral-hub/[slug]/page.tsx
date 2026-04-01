@@ -180,6 +180,68 @@ export default function PartnerDetailPage() {
         </div>
       </section>
 
+      {/* Benefits */}
+      {partner.benefits && (
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-primary-green/10 flex items-center justify-center">
+                  <DollarSign className="w-6 h-6 text-primary-green" />
+                </div>
+                <h2 className="text-3xl font-logo font-bold text-dark-navy">
+                  Benefits
+                </h2>
+              </div>
+              <div className="bg-light-gray rounded-2xl p-8 space-y-4">
+                {partner.benefits.learnMoreLink && (
+                  <a
+                    href={partner.benefits.learnMoreLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-primary-blue font-bold hover:underline text-lg"
+                  >
+                    CLICK HERE TO LEARN MORE ABOUT {partner.name.toUpperCase()}
+                  </a>
+                )}
+                {partner.benefits.commissionType && (
+                  <p className="text-lg text-dark-navy">
+                    <span className="font-bold">Commission type:</span>{" "}
+                    {partner.benefits.commissionType}
+                  </p>
+                )}
+                {partner.benefits.commissionAmount && (
+                  <p className="text-lg text-dark-navy">
+                    <span className="font-bold">Commission amount:</span>{" "}
+                    {partner.benefits.commissionAmount}
+                  </p>
+                )}
+                {partner.benefits.additionalTerms && (
+                  <p className="text-lg text-dark-navy">
+                    <span className="font-bold">Additional terms:</span>{" "}
+                    {partner.benefits.additionalTerms}
+                  </p>
+                )}
+                {partner.benefits.affiliateSignUpLink && (
+                  <a
+                    href={partner.benefits.affiliateSignUpLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-red-600 font-bold hover:underline text-lg mt-4"
+                  >
+                    CLICK HERE TO SIGN UP AS AN AFFILIATE
+                  </a>
+                )}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
       {/* Referral Fee */}
       <section className="py-16 bg-dark-navy relative overflow-hidden">
         <div className="absolute inset-0 pattern-bg opacity-30" />

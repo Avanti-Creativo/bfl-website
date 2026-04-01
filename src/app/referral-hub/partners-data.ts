@@ -19,6 +19,13 @@ export interface Partner {
   };
   disclosure?: string;
   extras?: { label: string; content: string }[];
+  benefits?: {
+    learnMoreLink?: string;
+    commissionType?: string;
+    commissionAmount?: string;
+    additionalTerms?: string;
+    affiliateSignUpLink?: string;
+  };
 }
 
 export const partners: Partner[] = [
@@ -339,6 +346,84 @@ export const partners: Partner[] = [
     },
     disclosure:
       "Visionary Flow Solutions provides consulting, CRM development, automation, and AI integration services. VFS is not a licensed financial, legal, insurance, or tax advisory firm. Clients are solely responsible for complying with all applicable laws and regulations in their industry. Results may vary depending on business model, industry, and implementation. VFS does not guarantee specific outcomes such as income growth or client acquisition.",
+  },
+  {
+    slug: "mediator-debt-solutions",
+    name: "Mediator Debt Solutions",
+    founder: "Mediator Debt Solutions",
+    founderTitle: "Debt Resolution Specialists",
+    whoTheyAre: [
+      "Mediator Debt Solutions (MDS) specializes in helping individuals resolve unsecured debt through professional negotiation and structured settlement programs. They work directly with creditors to reduce the total amount owed, giving clients a realistic path to becoming debt-free.",
+      "Their approach is built on transparency, compliance, and results. MDS handles the heavy lifting of creditor negotiations so clients can focus on rebuilding their financial health.",
+    ],
+    whoToRefer: {
+      intro:
+        "Anyone in your network struggling with unsecured debt — credit cards, medical bills, personal loans — who needs professional help negotiating with creditors. This is a volume-based referral opportunity with no charge backs and reliable payouts.",
+      bestFor: [
+        "Individuals overwhelmed by credit card debt",
+        "People dealing with medical bills or personal loan debt",
+        "Anyone who has fallen behind on unsecured debt payments",
+        "Clients looking for an alternative to bankruptcy",
+        "People who need professional creditor negotiation support",
+      ],
+    },
+    howToRefer: [
+      "\u201cDo you know anyone struggling with credit card debt or medical bills? I work with a company that negotiates directly with creditors to reduce what you owe. They\u2019ve helped a lot of people get back on track.\u201d",
+      "\u201cIf you\u2019re feeling overwhelmed by unsecured debt, I can connect you with Mediator Debt Solutions. They handle the negotiation so you don\u2019t have to.\u201d",
+    ],
+    referralFee: "2.5% of unsecured debt resolved",
+    contact: {
+      name: "Mediator Debt Solutions",
+      phone: "",
+      email: "",
+      website: "mediatordebtsolutions.com",
+    },
+    benefits: {
+      learnMoreLink: "https://mediatordebtsolutions.com/the-journey/",
+      commissionType: "Percent Of Unsecured Debt Resolved",
+      commissionAmount: "2.5%",
+      additionalTerms:
+        "You will get a 2.5% commission for referring unsecured debts to MDS and an additional .5% if more than 50 referrals become clients in a month. No charge backs, and commissions are paid out over 4 installments.",
+    },
+  },
+  {
+    slug: "rok-financial",
+    name: "ROK Financial",
+    founder: "ROK Financial",
+    founderTitle: "Business Lending Specialists",
+    whoTheyAre: [
+      "ROK Financial is a leading business lending marketplace that connects entrepreneurs and business owners with the capital they need to grow. They offer a wide range of financing solutions including SBA loans, term loans, lines of credit, equipment financing, and more.",
+      "With a streamlined application process and access to a broad network of lenders, ROK Financial helps businesses secure funding quickly and efficiently, even when traditional banks say no.",
+    ],
+    whoToRefer: {
+      intro:
+        "Any business owner or entrepreneur in your network who needs capital to grow, expand, or manage cash flow. With a 15% commission based on profit from each sale, this is one of the highest-earning opportunities in the hub.",
+      bestFor: [
+        "Small business owners looking for growth capital",
+        "Entrepreneurs needing startup or expansion funding",
+        "Business owners seeking equipment financing",
+        "Companies that need working capital or lines of credit",
+        "Anyone who has been turned down by traditional banks",
+      ],
+    },
+    howToRefer: [
+      "\u201cDo you know any business owners who need funding? I work with ROK Financial — they specialize in getting businesses the capital they need, even when banks say no.\u201d",
+      "\u201cIf you\u2019re looking to grow your business but need financing, I can connect you with ROK Financial. They offer everything from SBA loans to lines of credit.\u201d",
+    ],
+    referralFee: "Up to 15% of profit from sale",
+    contact: {
+      name: "ROK Financial",
+      phone: "",
+      email: "",
+      website: "rokfi.com",
+    },
+    benefits: {
+      learnMoreLink: "https://www.youtube.com/watch?v=yDbtdk_MZNA",
+      commissionType: "Percent Of Profit From Sale",
+      commissionAmount: "15%",
+      additionalTerms:
+        "You will get up to a 15% commission based on the loan amount secured through ROK Financial and the profit generated by ROK.",
+    },
   },
 ];
 

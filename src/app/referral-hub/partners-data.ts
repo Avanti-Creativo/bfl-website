@@ -13,9 +13,9 @@ export interface Partner {
   referralFee: string;
   contact: {
     name: string;
-    phone: string;
-    email: string;
-    website: string;
+    phone?: string;
+    email?: string;
+    website?: string;
   };
   disclosure?: string;
   extras?: { label: string; content: string }[];

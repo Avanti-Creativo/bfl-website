@@ -282,20 +282,24 @@ export default function PartnerDetailPage() {
                 {partner.contact.name}
               </p>
               <div className="space-y-4">
-                <a
-                  href={`tel:${partner.contact.phone.replace(/[^0-9+]/g, "")}`}
-                  className="flex items-center gap-3 text-warm-gray hover:text-primary-blue transition-colors"
-                >
-                  <Phone className="w-5 h-5 flex-shrink-0" />
-                  {partner.contact.phone}
-                </a>
-                <a
-                  href={`mailto:${partner.contact.email}`}
-                  className="flex items-center gap-3 text-warm-gray hover:text-primary-blue transition-colors"
-                >
-                  <Mail className="w-5 h-5 flex-shrink-0" />
-                  {partner.contact.email}
-                </a>
+                {partner.contact.phone && (
+                  <a
+                    href={`tel:${partner.contact.phone.replace(/[^0-9+]/g, "")}`}
+                    className="flex items-center gap-3 text-warm-gray hover:text-primary-blue transition-colors"
+                  >
+                    <Phone className="w-5 h-5 flex-shrink-0" />
+                    {partner.contact.phone}
+                  </a>
+                )}
+                {partner.contact.email && (
+                  <a
+                    href={`mailto:${partner.contact.email}`}
+                    className="flex items-center gap-3 text-warm-gray hover:text-primary-blue transition-colors"
+                  >
+                    <Mail className="w-5 h-5 flex-shrink-0" />
+                    {partner.contact.email}
+                  </a>
+                )}
                 {partner.contact.website && (
                   <a
                     href={`https://${partner.contact.website}`}
@@ -375,13 +379,23 @@ export default function PartnerDetailPage() {
               partners in the hub.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                href={`mailto:${partner.contact.email}`}
-                size="lg"
-                pulse
-              >
-                Contact {partner.contact.name}
-              </Button>
+              {partner.contact.email ? (
+                <Button
+                  href={`mailto:${partner.contact.email}`}
+                  size="lg"
+                  pulse
+                >
+                  Contact {partner.contact.name}
+                </Button>
+              ) : partner.contact.phone ? (
+                <Button
+                  href={`tel:${partner.contact.phone.replace(/[^0-9+]/g, "")}`}
+                  size="lg"
+                  pulse
+                >
+                  Call {partner.contact.name}
+                </Button>
+              ) : null}
               <Button href="/referral-hub" size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-blue">
                 Browse All Partners
               </Button>

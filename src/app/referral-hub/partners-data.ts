@@ -350,6 +350,7 @@ export const partners: Partner[] = [
   {
     slug: "mediator-debt-solutions",
     name: "Mediator Debt Solutions",
+    logo: "/images/logos/mediator-debt-solutions.png",
     founder: "Mediator Debt Solutions",
     founderTitle: "Debt Resolution Specialists",
     whoTheyAre: [
@@ -389,6 +390,7 @@ export const partners: Partner[] = [
   {
     slug: "rok-financial",
     name: "ROK Financial",
+    logo: "/images/logos/rok-financial.png",
     founder: "ROK Financial",
     founderTitle: "Business Lending Specialists",
     whoTheyAre: [

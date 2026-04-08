@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
 import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
@@ -34,7 +35,18 @@ const socialLinks = [
 
 export function Footer() {
   const pathname = usePathname();
-  const hideCta = pathname.startsWith("/referral-hub") || pathname.startsWith("/careers");
+  const [isReferralHubDomain, setIsReferralHubDomain] = useState(false);
+
+  useEffect(() => {
+    setIsReferralHubDomain(
+      window.location.hostname.includes("bflreferralhub")
+    );
+  }, []);
+
+  const hideCta =
+    pathname.startsWith("/referral-hub") ||
+    pathname.startsWith("/careers") ||
+    isReferralHubDomain;
 
   return (
     <footer className="bg-dark-navy text-white">

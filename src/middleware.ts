@@ -1,6 +1,9 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { partners } from "@/app/referral-hub/partners-data";
 
+// Matches www., apex, and any future subdomain of bflreferralhub.com.
+// Vercel only routes traffic for attached domains, so no untrusted host
+// can trigger this branch in production.
 const REFERRAL_HUB_HOST_FRAGMENT = "bflreferralhub";
 const MAIN_SITE_ORIGIN = "https://www.bflagency.com";
 

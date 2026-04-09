@@ -50,7 +50,7 @@ export function Footer() {
 
   return (
     <footer className="bg-dark-navy text-white">
-      {/* CTA Section - hidden on referral hub and careers/agents pages */}
+      {/* CTA Section - hidden on referral hub, careers/agents pages, and bflreferralhub.com */}
       {!hideCta && (
         <div className="border-b border-white/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

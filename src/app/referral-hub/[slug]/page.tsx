@@ -12,7 +12,9 @@ import {
   Globe,
   CheckCircle,
   Info,
+  ClipboardList,
 } from "lucide-react";
+import Script from "next/script";
 import { Button } from "@/components/ui/Button";
 import { getPartnerBySlug } from "../partners-data";
 import Link from "next/link";
@@ -266,6 +268,62 @@ export default function PartnerDetailPage() {
         </div>
       </section>
 
+      {/* Referral Form */}
+      {partner.referralFormUrl && partner.referralFormId && (
+        <section id="referral-form" className="py-16 bg-white scroll-mt-24">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-primary-blue/10 flex items-center justify-center">
+                  <ClipboardList className="w-6 h-6 text-primary-blue" />
+                </div>
+                <h2 className="text-3xl font-logo font-bold text-dark-navy">
+                  Submit Your Referral
+                </h2>
+              </div>
+              <p className="text-lg text-warm-gray leading-relaxed mb-8">
+                Fill out the form below to submit a referral for{" "}
+                {partner.name}. The partner team will follow up directly with
+                your contact.
+              </p>
+              <div className="bg-light-gray rounded-2xl p-2 sm:p-4 shadow-sm border border-gray-100 overflow-hidden">
+                <iframe
+                  src={partner.referralFormUrl}
+                  id={`inline-${partner.referralFormId}`}
+                  data-layout={"{'id':'INLINE'}"}
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name={`${partner.name} Referral Form`}
+                  data-height="720"
+                  data-layout-iframe-style="true"
+                  data-form-id={partner.referralFormId}
+                  title={`${partner.name} Referral Form`}
+                  style={{
+                    width: "100%",
+                    minHeight: "720px",
+                    border: "none",
+                    borderRadius: "12px",
+                    background: "white",
+                  }}
+                />
+              </div>
+            </motion.div>
+          </div>
+          <Script
+            src="https://link.msgsndr.com/js/form_embed.js"
+            strategy="lazyOnload"
+          />
+        </section>
+      )}
+
       {/* Contact */}
       <section className="py-16 bg-light-gray">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -379,7 +437,11 @@ export default function PartnerDetailPage() {
               partners in the hub.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {partner.contact.email ? (
+              {partner.referralFormUrl ? (
+                <Button href="#referral-form" size="lg" pulse>
+                  Submit a Referral
+                </Button>
+              ) : partner.contact.email ? (
                 <Button
                   href={`mailto:${partner.contact.email}`}
                   size="lg"

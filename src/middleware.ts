@@ -52,7 +52,20 @@ export function middleware(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
-  // Anything else → 301 redirect to bflagency.com{path}.
+  // Anything else → cross-origin redirect to bflagency.com.
+  //
+  // Next.js <Link> prefetches and soft navigations send RSC requests with an
+  // "rsc" header (and sometimes an _rsc query param). A 301 across origins
+  // triggers a CORS preflight on the target that bflagency.com doesn't
+  // allowlist, so the prefetch/navigation fails in the browser. Returning 204
+  // for RSC requests lets Next.js fall back to a hard navigation, which the
+  // browser handles natively (no preflight) and ends up on bflagency.com.
+  const isRscRequest =
+    request.headers.get("rsc") === "1" ||
+    request.nextUrl.searchParams.has("_rsc");
+  if (isRscRequest) {
+    return new NextResponse(null, { status: 204 });
+  }
   return NextResponse.redirect(`${MAIN_SITE_ORIGIN}${pathname}${search}`, 301);
 }
 

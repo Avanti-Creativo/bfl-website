@@ -9,6 +9,8 @@ interface ButtonProps {
   size?: "sm" | "md" | "lg";
   pulse?: boolean;
   href?: string;
+  target?: string;
+  rel?: string;
   className?: string;
   children?: React.ReactNode;
   disabled?: boolean;
@@ -17,7 +19,7 @@ interface ButtonProps {
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "primary", size = "md", pulse = false, children, href, disabled, type = "button", onClick }, ref) => {
+  ({ className, variant = "primary", size = "md", pulse = false, children, href, target, rel, disabled, type = "button", onClick }, ref) => {
     const baseStyles = "inline-flex items-center justify-center font-semibold rounded-xl transition-all duration-300 btn-glow cursor-pointer";
     
     const variants = {
@@ -54,8 +56,15 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     if (href) {
+      const computedRel =
+        rel ?? (target === "_blank" ? "noopener noreferrer" : undefined);
       return (
-        <a href={href} className="inline-block">
+        <a
+          href={href}
+          target={target}
+          rel={computedRel}
+          className="inline-block"
+        >
           {content}
         </a>
       );

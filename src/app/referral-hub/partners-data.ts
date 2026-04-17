@@ -27,7 +27,6 @@ export interface Partner {
     affiliateSignUpLink?: string;
   };
   referralFormUrl?: string;
-  referralFormId?: string;
 }
 
 export const partners: Partner[] = [
@@ -65,7 +64,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/77sPWE21chIyzIauesxt",
-    referralFormId: "77sPWE21chIyzIauesxt",
     disclosure:
       "Advisory services offered through Financial Legacy Builders, an investment adviser registered with the state of Ohio. Advisory services are only offered to clients or prospective clients where Financial Legacy Builders and its representatives are properly registered or exempt from registration. The information on this site is not intended as tax, accounting, or legal advice, nor is it an offer or solicitation to buy or sell, or as an endorsement of any company, security, fund, or other offering. Information provided should not be solely relied upon for decision-making. Please consult your legal, tax, or accounting professional regarding your specific situation. Investments involve risk and have the potential for complete loss. It should not be assumed that any recommendations made will necessarily be profitable. The information on this site is provided \u201cAS IS\u201d and without warranties either express or implied, and the information may not be free from error. Your use of the information provided is at your sole risk.",
   },
@@ -103,7 +101,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/4s0uHYmfPmFqga9Xn56Q",
-    referralFormId: "4s0uHYmfPmFqga9Xn56Q",
   },
   {
     slug: "prime-ethos",
@@ -137,7 +134,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/aSCY8XJvRLTaiP4Cnvqj",
-    referralFormId: "aSCY8XJvRLTaiP4Cnvqj",
   },
   {
     slug: "legalshield",
@@ -174,7 +170,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/4qEvm7EAdTsLqM2olH1K",
-    referralFormId: "4qEvm7EAdTsLqM2olH1K",
     extras: [
       {
         label: "Client-Facing Videos",
@@ -222,7 +217,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/sCJdxCqQYdIQoDhrcFgN",
-    referralFormId: "sCJdxCqQYdIQoDhrcFgN",
     disclosure:
       "Wealth Guaranteed is not a law firm and does not provide legal advice. They provide private education, documentation, and tax services to help clients correct their tax classification and claim lawful refunds they may be owed. All services are compliant with U.S. tax law and IRS procedure. Wealth Guaranteed is not affiliated with the IRS or any government agency and does not teach tax evasion or illegal avoidance schemes.",
   },
@@ -260,7 +254,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/KQz6goWKTH80XYOECk3O",
-    referralFormId: "KQz6goWKTH80XYOECk3O",
   },
   {
     slug: "national-gold-consultants",
@@ -296,7 +289,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/teX4PTm8T2ZYgvhK94m0",
-    referralFormId: "teX4PTm8T2ZYgvhK94m0",
   },
   {
     slug: "korman-elite-holdings",
@@ -333,7 +325,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/rbQ9lwNoFYZKUtuzKaIK",
-    referralFormId: "rbQ9lwNoFYZKUtuzKaIK",
     disclosure:
       "Korman Elite Holdings LLC is a Maryland limited liability company licensed as a private money broker and real estate investment specialist. Private real estate investments involve significant risks including loss of principal and liquidity constraints. Opportunities are offered to accredited investors only where applicable. Past performance is not indicative of future results. No offering is insured by the FDIC, SIPC, or any government agency. Korman Elite Holdings does not provide legal or tax advice.",
   },
@@ -372,7 +363,6 @@ export const partners: Partner[] = [
     },
     referralFormUrl:
       "https://brand.bflreferralhub.com/widget/form/wY0Oac8bpFAUxHoxTo2h",
-    referralFormId: "wY0Oac8bpFAUxHoxTo2h",
     disclosure:
       "Visionary Flow Solutions provides consulting, CRM development, automation, and AI integration services. VFS is not a licensed financial, legal, insurance, or tax advisory firm. Clients are solely responsible for complying with all applicable laws and regulations in their industry. Results may vary depending on business model, industry, and implementation. VFS does not guarantee specific outcomes such as income growth or client acquisition.",
   },

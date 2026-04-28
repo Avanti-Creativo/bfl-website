@@ -404,6 +404,7 @@ export const partners: Partner[] = [
       commissionAmount: "2.5%",
       additionalTerms:
         "You will get a 2.5% commission for referring unsecured debts to MDS and an additional .5% if more than 50 referrals become clients in a month. No charge backs, and commissions are paid out over 4 installments.",
+      affiliateSignUpLink: "https://bfl.mediatordebtsolutions.com/",
     },
   },
   {

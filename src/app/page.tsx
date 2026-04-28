@@ -106,13 +106,14 @@ function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="hidden lg:block"
           >
-            <div className="aspect-video bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 flex items-center justify-center">
-              <div className="text-center text-white/60">
-                <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
-                  <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-white/80 border-b-8 border-b-transparent ml-1" />
-                </div>
-                <p className="text-sm">Video Coming Soon</p>
-              </div>
+            <div className="aspect-video bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/j5RKwjpWap0"
+                title="BFL Main Website Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              />
             </div>
           </motion.div>
         </div>

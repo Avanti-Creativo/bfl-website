@@ -108,7 +108,7 @@ function HeroSection() {
           >
             <div className="aspect-video bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/j5RKwjpWap0"
+                src="https://www.youtube.com/embed/k8quo3JpOO4"
                 title="BFL Main Website Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

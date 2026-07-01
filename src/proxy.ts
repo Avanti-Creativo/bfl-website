@@ -11,7 +11,7 @@ const MAIN_SITE_ORIGIN = "https://www.bflagency.com";
 // are picked up automatically on the next deploy.
 const partnerSlugs = new Set(partners.map((p) => p.slug));
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const host = request.headers.get("host") ?? "";
 
   // On the main BFL site (or previews/localhost), do nothing.

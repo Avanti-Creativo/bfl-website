@@ -448,7 +448,38 @@ export const partners: Partner[] = [
       affiliateSignUpLink:
         "https://go.mypartner.io/referral-partner/?ref=001Qk00000Sq3GKIAZ",
     },
-  },
+  }
+  ,{
+    slug: "bill-kormans-mindset-revolution",
+    name: "Bill Korman’s Mindset Revolution",
+    logo: "/images/logos/bill-kormans-mindset-revolution.png",
+    founder: "Bill Korman",
+    founderTitle: "Founder & Author of The 168 Game",
+    whoTheyAre: [
+      "BKMR helps executives, business owners and entrepreneurs reclaim their time, using the Time Ownership Framework known as The 168 Game. A former US Navy Chief Officer with 20 years of service, serial entrepreneur, and best-selling author of The 168 Game: Time Ownership vs. Time Management, Bill has coached thousands of business owners to scale past their revenue ceilings while working less.",
+      "His work has been featured in Barron's, Fox News, and Yahoo. As CEO of Built For Life Financial Agency, Bill built and led a 760+ agent team, so he understands exactly what executives carry.",
+    ],
+    whoToRefer: {
+      intro:
+        "Any client, business owner, entrepreneur who has hit a plateau in their business. If they have hit a revenue ceiling, live in back-to-back meetings, and keep pushing off the strategic work that would actually move the needle, they belong in front of Bill. This lands especially well with people who want to buy back their time while increasing their income.",
+      bestFor: [
+        "Executives, entrepreneurs and business owners who have hit a revenue ceiling",
+        "High performers working 80+ hour weeks who want their time back",
+        "Clients who value freedom and impact over simply looking busy",
+        "Anyone ready to invest in a proven system instead of another quick fix",
+      ],
+    },
+    howToRefer: [
+      "\"You're working more than ever, but does success still feel like burnout? I work with Bill Korman, a Navy veteran and best-selling author who helps established executives reclaim 20+ hours a week while increasing your revenue. Would you like me to connect you?\"",
+    ],
+    referralFee:
+      "10% of the client's program investment. You earn your commission proportionally as the client completes their payment plan. If the client pays in thirds, you earn 10% on each third as it is paid, so your payout tracks right alongside theirs.",
+    contact: {
+      name: "Bill Korman",
+      email: "hello@the168game.com",
+      website: "bill-korman.com",
+    },
+  }
 ];
 
 export function getPartnerBySlug(slug: string): Partner | undefined {
